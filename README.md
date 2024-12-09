@@ -270,11 +270,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. Mijn Article - summary - detail structuur heb ik samen gemaakt met de studentassistent
+  1. Mijn Article - summary - detail structuur heb ik samen gemaakt met de studentassistente
   2. Mijn code voor de iframe komt zowel van de site: https://giphy.com/gifs/ykosiris-ride-yk-osiris-XdPiZg0XdMNGCGxvh7 als de correcte structuur zodat de foutmelding kon verdwijnen van ChatGPT
   3. Mijn  (html) Form voor de news mail komt van Chat GPT als vraagprompt: Maak een formulier voor mij waar je je mail kan zetten en kan submitten voor news
   4. Ik had een probleem tijdens het tabben door mijn site door de iframe gif dus heb daar een tabindex gezet met behulp van chat gpt want ik begreep niet waarom hij perse alle links moest voorlezen..
-  5. Tijdens het maken van de media queries heb ik ChatGPT gevraagd me een beetje mee te helpen met het sctructeren en heb daarom als het gaat om de grid-templates het meest geluisterd naar de AI output en daarop verder gecodeerd tot het een beetje klopte qua px bij px en of bepaalde elementen zich anders moesten gedragen zoals gaan naar de center of volledig het scherm moesten innemen.
+  5. Tijdens het maken van de media queries heb ik ChatGPT gevraagd me een beetje mee te helpen met het sctructeren en heb daarom als het gaat om de grid-templates het meest geluisterd naar de AI output en daarop verder gecodeerd tot het een beetje klopte qua px bij px en of bepaalde elementen zich anders moesten gedragen zoals gaan naar de center of volledig het scherm moesten innemen. 
+  6. Mijn Javascript komt letterlijk uit mijn game website van vorig jaar van programmeren en is dus gecopypaste en daarna handmatig aangepast zodat het correct pastte binnen deze site.
+  
 
 
 </details>
