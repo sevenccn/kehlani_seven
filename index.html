@@ -24,28 +24,44 @@
 
 <body>
 	<header>
+		<button class="hamburger-menu" aria-hidden="true">
+			<img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="Hamburgermenu">
+		</button>
+
+		<nav>
+
+			<ul>
+				<li>
+					<a href="index.html" class="merch-link"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg"
+					alt="sluit de Hamburgermenu"></a>
+					<a href="poster.html" class="merch-link">Merch</a>
+					<a href="poster.html" class="merch-link">Concerts</a>
+					<a href="poster.html" class="merch-link">Contact</a>
+				</li>
+			</ul>
+		</nav>
+
 		<ul>
 			<li><a href="#">Subscribe For Special Offers</a></li>
 			<li><a href="#">Go back to Kehlani.com></a></li>
 		</ul>
 
 		<h1>KEHLANI</h1>
-
-		<iframe src="https://giphy.com/embed/XdPiZg0XdMNGCGxvh7" width="350" height="271"
-			style="border: none; pointer-events: none;" allow="fullscreen" tabindex="-1">
-		</iframe>
-
-		<!-- iframe chat gpt hulp omdat tijdens het tabben de tab IN de gif zat voor een bepaalde tijd wat nogal vervelend was voor de flow en ik niet perse wist hoe ik dit kon oplossen. -->
-
-
-		<p><a href="https://giphy.com/gifs/ykosiris-ride-yk-osiris-XdPiZg0XdMNGCGxvh7"></a></p>
-		<button tabindex="1">Listen to Crash!</button>
-		<h2>Crash Tour Collection</h2>
-		<p>EXCLUSIVELY AT KEHLANISTORE.COM</p>
 	</header>
 
 	<main>
 
+		<iframe src="https://giphy.com/embed/XdPiZg0XdMNGCGxvh7" width="350" height="271"
+		style="border: none; pointer-events: none;" allow="fullscreen" tabindex="-1">
+	</iframe>
+
+	<!-- iframe chat gpt hulp omdat tijdens het tabben de tab IN de gif zat voor een bepaalde tijd wat nogal vervelend was voor de flow en ik niet perse wist hoe ik dit kon oplossen. -->
+
+
+	<p><a href="https://giphy.com/gifs/ykosiris-ride-yk-osiris-XdPiZg0XdMNGCGxvh7"></a></p>
+	<button class="listen-button" tabindex="1">Listen to Crash!</button>
+	<h2>Crash Tour Collection</h2>
+	<p>EXCLUSIVELY AT KEHLANISTORE.COM</p>
 		<!-- sections zorgen voor betere accessibility doordat screenreaders beter kunnen navigeren door de site op een georganiseerde volgorde: de screenreader announced ook elke section en dan dus de content binnen de section. / het maakt de styling handiger binnen css		 -->
 		<section>
 			<h2> Shop </h2>
@@ -71,7 +87,7 @@
 				<li>
 					<a href="#">
 						<img src="images/kehlani_red.png" alt="Kehlani_limited">
-						Crash Limited Edition With Black Splatter Vinyl - $27.98 USD</a>
+						Crash with Black Splatter Vinyl - $27.98 USD</a>
 				</li>
 
 				<li>

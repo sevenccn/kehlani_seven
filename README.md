@@ -233,6 +233,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
  - Ik heb geleerd te werken met een article! (shop by category)
   -Ik heb een beetje leren werken met mijn site responsive maken
   -Ik heb een mooie nav kunnen maken met diverse producten
+  -Ik heb geleerd hoe ik echt werk met nth of type want het was zeker heel interessant en specifiek.
 
   <img src="readme-images/goed.png" width="375px" alt="top">
 
@@ -251,7 +252,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
  - Ik had eigenlijk ook wel willen kijken naar als je tabt dat je ook de summary kan openen maar dacht daar te laat aan en vond het een bijzaak als we kijken naar al mijn problemen algelopen weken.
 
  
- 
+ Herkansing:
+
+Wat uiteindelijk niet goed tot zijn recht is gekomen, is het hamburger menu. Ondanks een hele dag intensief samenwerken met Nina en Sharena om het probleem op te lossen, bleef het een uitdaging om het optimaal te laten functioneren binnen de rest van mijn code.  Ik heb uiteindelijk wel iets van een hamburger menu kunnen maken maar ik vind hem niet perse mooi, maar functioneel is het een soort van wel.
 
 
   <img src="readme-images/dummy-jammer.png" width="375px" alt="bummer">
@@ -276,7 +279,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   4. Ik had een probleem tijdens het tabben door mijn site door de iframe gif dus heb daar een tabindex gezet met behulp van chat gpt want ik begreep niet waarom hij perse alle links moest voorlezen..
   5. Tijdens het maken van de media queries heb ik ChatGPT gevraagd me een beetje mee te helpen met het sctructeren en heb daarom als het gaat om de grid-templates het meest geluisterd naar de AI output en daarop verder gecodeerd tot het een beetje klopte qua px bij px en of bepaalde elementen zich anders moesten gedragen zoals gaan naar de center of volledig het scherm moesten innemen. 
   6. Mijn Javascript komt letterlijk uit mijn game website van vorig jaar van programmeren en is dus gecopypaste en daarna handmatig aangepast zodat het correct pastte binnen deze site.
-  
-
+  7. Mijn Hamburger menu heb ik deels van Nina en chat gpt.
 
 </details>

@@ -4,56 +4,87 @@
 *,
 *::after,
 *::before {
-	box-sizing: border-box;
-	color: var(--color-text);
-	margin: 0;
-	font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    color: var(--color-text);
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text: #ffffff;
-	--color-background: #eee;
-	--color-button: rgb(88, 9, 22);
-    --color-header:  rgb(97, 33, 33);
+    /* startje */
+    --color-text: #ffffff;
+    --color-background: #eee;
+    --color-button: rgb(88, 9, 22);
+    --color-header: rgb(97, 33, 33);
     --color-shadowbutton: #6e1313;
     --color-hoverbutton: rgb(200, 0, 0);
 }
+
 /****************/
 /* JOUW STYLING */
 /****************/
 body {
     background-image: url("../images/kehlani_bk.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	margin: 0;
-	padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
 }
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+
+header button {
+    display: inline-block;
+    padding: 1.2em 3em;
+    font-size: 1.2em;
+    background-color: var(--color-button);
+    border: none;
+    border-radius: 0.5em;
+    box-shadow: 0 0.3125em var(--color-shadowbutton);
+    cursor: pointer;
+    transition: all .3s ease;
+    margin: 2em auto;
+}
+
+
 
 p {
-margin: .6em;
+    margin: 2em;
 }
 
-header p {
-display: flex;
-justify-content: center;
-margin: 0;
+main > p {
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
 
 
 ul {
-	padding: 0;
+    padding: 0;
 }
 
 
 ol {
-	padding: 1em; 
-	margin: 1.5em;
+    padding: 1em;
+    margin: 1em auto;
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.8;
+    width: fit-content;
 }
+
 
 
 img {
@@ -62,150 +93,244 @@ img {
 }
 
 h1 {
-	font-size: 4em;
+    font-size: 4em;
 }
 
 footer {
-	margin: 2em;
+    margin: 2em;
 }
 
 
 h1 a {
     text-decoration: none;
-    color: var(--color-text); 
+    color: var(--color-text);
 }
 
 
 h1,
 h2 {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 
 iframe {
-	margin: 0;
-	display: flex;
-	justify-self: center;
+    margin: 0;
+    display: flex;
+    justify-self: center;
 }
 
-	
+
 header li:nth-of-type(1) {
-	background-color: var(--color-header);
-	display: flex;
-	justify-content: center;
-	padding: 0.5em;
-	position: fixed; 
-    width: 100%; 
-	left: 0;
-	top: 0;
+    background-color: var(--color-header);
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
 }
 
 header li:nth-of-type(2) {
-	display: flex;
-	justify-content: left;
-	font-size: 1em;
-	padding: 0.5em;
-	margin-top: 2em;
+    display: flex;
+    justify-content: left;
+    font-size: 1em;
+    padding: 0.5em;
+    margin-top: 2em;
 }
 
+header li img {
+width: 50px;
+height: 50px;
+}
+
+
+
 ul h2 {
-	margin: 1em;
+    margin: 1em;
 }
 
 
 /* van mijn oude site van jaar 1 met behulp van mijn destijdse docent */
 button {
-	border: 0;
-	background: var(--color-button);
-	border-radius: .5em;
-	box-shadow: 0 0.3125em  var(--color-shadowbutton);
-	cursor: pointer;
-	margin: 2em .8em;
-	outline: 0;
-	padding: 1em 2em;
-	transition: all .1s linear;
+    border: 0;
+    background: var(--color-button);
+    border-radius: .5em;
+    box-shadow: 0 0.3125em var(--color-shadowbutton);
+    cursor: pointer;
+    margin: 2em .8em;
+    outline: 0;
+    padding: 1em 2em;
+    transition: all .1s linear;
 }
 
-button:hover { 
-	background: var(--color-hoverbutton);
-	transform: scale(1.05);
-	transition: .4s;
+button:hover {
+    background: var(--color-hoverbutton);
+    transform: scale(1.05);
+    transition: .4s;
 }
 
-main > button {
-    position: sticky;
-    top: 3em; 
+button:focus {
+    border-color: #ff9800;
+    background-color: #555; 
+    box-shadow: 0 0 5px 2px rgba(255, 152, 0, 0.75); 
+    outline: none; 
 }
 
+
+
+
+
+
+main>button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+    width: fit-content;
+}
+
+main>p {
+    max-width: 600px;
+    margin: 1em auto;
+    line-height: 1.6;
+}
+
+main>h2:nth-of-type(2) {
+    margin-top: 2.5em;
+}
+
+main>section:nth-of-type(1) {
+    margin-bottom: 2em;
+}
 
 article {
-	margin: 1em;
+    margin: 1em;
 }
 
 article h2 {
-font-size: 2em;
+    font-size: 2em;
 }
 
 form {
-margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 10vh auto;
+    width: fit-content;
 }
 
 form button {
-margin-left: 10em;
+    padding: 1em 2em;
+    font-size: 0.9em;
+    border-radius: 0.3em;
 }
+
+
+
+
+section:nth-of-type(1) {
+    margin-top: 2em;
+}
+
 
 section:nth-of-type(2) h3,
 summary {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 
 section :nth-of-type(1) ul {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section:nth-of-type(1) ul li {
-	margin: .6em;
-	text-align: center;
+    margin: .6em;
+    text-align: center;
 }
+
 
 section li {
-	display: flex;
-	justify-content: center;
-	padding: .6em;
-}
-
-section nav ul {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    padding: 0;
-    list-style: none;
+    padding: .6em;
 }
 
-section nav ul li {
-    text-align: center;
-    margin: 1em;
-}
-
- nav ul li img {
-    width: 200px; 
-}
 
 summary {
-text-decoration: underline;
+    text-decoration: underline;
 }
+
+/* Basisstijl voor het navigatiemenu - chat gpt*/
+nav {
+    display: none; 
+    background-color: var(--color-button);  
+    position: absolute;
+    top: 0;
+    left: 0; 
+    right: auto; 
+    bottom: 0;
+    text-align: center;
+    padding-top: 80px; 
+}
+
+
+nav.open {
+    display: block;
+}
+
+nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 1em;
+    display: block;
+}
+
+nav a:hover {
+    background-color: var(--color-hoverbutton);
+}
+
+header nav button img {
+background-color: transparent;
+}
+
+/* Stijl voor de hamburgerknop */
+.hamburger-menu {
+    background: none;
+    border: none;
+    padding: 0.8em;
+    box-shadow: none;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: 10px; 
+    left: 10px;  
+    padding-bottom: 3px;
+}
+
+/* Stijl voor het hamburger icoon */
+.hamburger-menu img {
+    width: 40px; 
+    height: 40px;
+}
+
+
+
+
+
 
 
 footer li,
 footer p {
-	display: flex;
-	justify-content: center;
-	font-size: 0.7em;
+    display: flex;
+    justify-content: center;
+    font-size: 0.7em;
 }
 
 /* Geleerd via het huiswerk */
@@ -214,50 +339,150 @@ footer p {
     0% {
         content: url("../images/kehlani_poster.png");
     }
+
     100% {
         content: url("../images/kehlani_signed.png");
     }
 }
 
-
 img[aria-label="switch"] {
     animation-name: switch-animation;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-} 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    max-width: 400px;
+    height: auto;
+}
 
 
 
 
 
 
-/* Styles for iPhone/iPad */ 
-@media screen and (max-width: 380px) {
-    section nav ul li {
+
+/* Styles for iPhone/iPad */
+@media screen and (max-width: 450px) {
+
+    body {
+        padding: 1em;
+    }
+
+    header,
+    main,
+    footer {
+        padding: 0 1em;
+    }
+
+    header {
+        margin-bottom: 1.5em;
+    }
+
+    header li:nth-of-type(1) {
+        width: 100%;
+        text-align: center;
         display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        text-align: center; 
+        flex-direction: column;
+        
+
     }
 
 
+    section:nth-of-type(1) {
+        margin-top: 1.5em;
+        font-size: 1em;
+        text-decoration: none;
+        margin-top: 1em;
+    }
+
+    section nav ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em;
+        justify-items: center;
+    }
+
+    section nav ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
     section nav ul li img {
-        width: 180px;  
-        margin-bottom: 0.5em; 
+        width: 180px;
+        margin-bottom: 0.5em;
+        object-fit: cover;
     }
 
     section nav ul li a {
         font-size: 1em;
         color: var(--color-text);
         text-decoration: none;
+        word-wrap: break-word;
+        max-width: 180px;
     }
+
+    section:nth-of-type(1) ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1em;
+        justify-content: center;
+        align-items: start;
+    }
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 1em;
+        margin-top: 1em;
+    }
+
+    form input {
+        height: 2em;
+        padding: 0.5em;
+        font-size: 0.9em;
+    }
+
+    .hamburger-menu {
+        top: 5px; 
+        left: 5px;
+    }
+
+    .hamburger-menu img {
+        width: 40px; 
+        height: 40px;
+    }
+
+    img[aria-label="switch"] {
+        width: 80%; 
+        max-width: 300px; 
+        height: auto; 
+    }
+
 }
 
 
-
-
 /* Tablet Styles (iPad) */
-@media screen and (max-width: 550px)  {
+@media screen and (min-width: 450px) {
+
+    header {
+        margin-bottom: 2em;
+    }
+
+    header button {
+        font-size: 1.1em;
+    }
+
+    section:nth-of-type(1) {
+        margin-top: 2em;
+    }
+
     header ul {
         flex-direction: row;
         justify-content: space-around;
@@ -267,40 +492,45 @@ img[aria-label="switch"] {
         width: 300px;
         height: 200px;
     }
-	header li:nth-of-type(1) {
-        width: 100%; 
+
+    header li:nth-of-type(1) {
+        width: 100%;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+
     }
-  
+
     header button {
         display: flex;
         justify-content: center;
-        }
+    }
 
     h1 {
         font-size: 3em;
     }
 
-    
     section:nth-of-type(1) ul {
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         justify-content: center;
-        align-items: flex-start;
+        margin-top: 1em;
     }
-
-	
 
     section:nth-of-type(1) ul li {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         max-width: 300px;
-        margin: 1em;
+        margin: 1em auto;
     }
 
     section:nth-of-type(1) ul li img {
         width: 180px;
+        height: auto;
         margin-bottom: 0.5em;
+        object-fit: cover;
     }
 
     section:nth-of-type(1) ul li a {
@@ -313,33 +543,75 @@ img[aria-label="switch"] {
         padding: 1em 2em;
         font-size: 1.1em;
     }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        gap: 1.2em;
+        margin-top: 1em;
+    }
+
+    form input {
+        height: 2.5em;
+        padding: 0.6em;
+        font-size: 1em;
+    }
+
+    .hamburger-menu {
+        top: 8px;
+        left: 8px;
+    }
+
+    .hamburger-menu img {
+        width: 40px; 
+        height: 40px;
+    }
+
+    img[aria-label="switch"] {
+        width: 70%; 
+        max-width: 400px;
+        height: auto; 
+    }
+
 }
 
-
-
 /* Desktop Styles */
-@media screen and (min-width: 600px) and (max-width: 2000px) {
+@media screen and (min-width: 600px) {
+
+    header {
+        margin-bottom: 6em;
+    }
+
+    header button {
+        padding: 3em 3.5em;
+        font-size: 1.3em;
+      
+    }
+
+    section:nth-of-type(1) {
+        margin-top: 3em;
+    }
 
     header ul {
         margin: 0 auto;
         padding: 1em 0;
     }
 
-	header li:nth-of-type(1) {
-        width: 100%; 
-        text-align: center; 
+    header li:nth-of-type(1) {
+        width: 100%;
+        text-align: center;
     }
 
-	header button {
-	display: flex;
-	justify-content: center;
-	}
+    header button {
+        display: flex;
+        justify-content: center;
+    }
 
     header iframe {
         width: 400px;
         height: 300px;
     }
-
 
     nav ul li img {
         width: 220px;
@@ -349,13 +621,12 @@ img[aria-label="switch"] {
         font-size: 4em;
     }
 
-    /* met behulp van CHAT GPT gewerkt aan de grid-template-columns */
-
     section:nth-of-type(1) ul {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1.5em;
+        gap: 3em;
         justify-content: center;
+        margin-top: 1em;
     }
 
     section:nth-of-type(1) ul li {
@@ -375,10 +646,37 @@ img[aria-label="switch"] {
         text-decoration: none;
     }
 
-
     button {
         font-size: 1.2em;
         padding: 1.5em 3em;
         margin: 2em auto;
     }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        gap: 1.5em;
+        margin-top: 1em;
+    }
+
+    form input {
+        height: 2.5em;
+        padding: 0.6em;
+        font-size: 1em;
+    }
+
+    .hamburger-menu {
+        top: 10px;
+        left: 10px;
+    }
+
+    .hamburger-menu img {
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+
 }
