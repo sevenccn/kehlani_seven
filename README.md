@@ -280,5 +280,6 @@ Wat uiteindelijk niet goed tot zijn recht is gekomen, is het hamburger menu. Ond
   5. Tijdens het maken van de media queries heb ik ChatGPT gevraagd me een beetje mee te helpen met het sctructeren en heb daarom als het gaat om de grid-templates het meest geluisterd naar de AI output en daarop verder gecodeerd tot het een beetje klopte qua px bij px en of bepaalde elementen zich anders moesten gedragen zoals gaan naar de center of volledig het scherm moesten innemen. 
   6. Mijn Javascript komt letterlijk uit mijn game website van vorig jaar van programmeren en is dus gecopypaste en daarna handmatig aangepast zodat het correct pastte binnen deze site.
   7. Mijn Hamburger menu heb ik deels van Nina en chat gpt.
+  8. Mijn header button css komt van programmeren -> samen gedaan met mijn docent.
 
 </details>
